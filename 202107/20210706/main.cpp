@@ -2,7 +2,10 @@
 
 using namespace std;
 
-extern const int gl;
+int te( int (&arr)[10] ){
+    cout << arr[0] << endl;
+    return 0;
+}
 
 int main(){
     /*
@@ -22,7 +25,12 @@ int main(){
     //cout << p << endl;
 
 
+    //extern const int gl;
+    //cout << gl << endl;
     
-    cout << gl << endl;
+
+    //形参是数组引用
+    int a[10] = {1,2};
+    te(a);
     return 0;
 }
