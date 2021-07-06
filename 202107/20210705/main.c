@@ -6,7 +6,7 @@
 #endif
 //extern int gl;
 int main(){
-extern int gl;
+extern const int gl;
 func();
 printf("global var gl: %d\n",gl);
 
