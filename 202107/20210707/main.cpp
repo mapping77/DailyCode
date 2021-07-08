@@ -26,10 +26,25 @@ class A {
 
 const int A::MAX = 7;
 
+
+//以inline 函数模版代替宏！
+template<typename T>
+int f(const T& rhs){
+    cout << "test inline" << endl;
+    return 0;
+}
+
+template<typename T>
+inline void callWithMax(const T& a, const T& b){
+    f(a>b ? a : b);
+}
+
+
 int main(void){
 
     //cout << MAX << endl;
     A a;
     a.printmax();
+    callWithMax(7,10);
     return 0;
 }
