@@ -35,7 +35,7 @@ cpp与c语言一样，变量有三个属性，作用域，链接属性、存储�
 在三个属性基础上的static、const、extern是来修饰变量的。
 
 
-不同文件共享访问const变量，cpp中需要定义时候用extern const，c中则没有这个要求。cpp中默认情况下const变量只在文件有效。
+不同文件共享访问const变量，cpp中需要定义时候用extern const，c中则没有这个要求。cpp中编译初始化的const变量只在文件有效。
 
 cpp中 const与c中const有了很大的不同。c中const很简单，cpp中const很复杂。
 
